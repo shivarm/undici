@@ -91,7 +91,7 @@
     "test:node-test": "borp --timeout 180000 -p \"test/node-test/**/*.js\"",
     "test:tdd": "borp --timeout 180000 --expose-gc -p \"test/*.js\"",
     "test:tdd:node-test": "borp --timeout 180000 -p \"test/node-test/**/*.js\" -w",
-    "test:typescript": "tsd && tsc test/imports/undici-import.ts --typeRoots ./types --noEmit && tsc ./types/*.d.ts --noEmit --typeRoots ./types",
+    "test:typescript": "tsd && tsc test/imports/undici-import.ts --typeRoots ./types --noEmit && tsc types/index.d.ts --noEmit --typeRoots ./types",
     "test:webidl": "borp --timeout 180000 -p \"test/webidl/*.js\"",
     "test:websocket": "borp --timeout 180000 -p \"test/websocket/**/*.js\"",
     "test:websocket:autobahn": "node test/autobahn/client.js",
@@ -129,7 +129,7 @@
     "node-forge": "^1.3.1",
     "proxy": "^4.0.0",
     "tsd": "^0.33.0",
-    "typescript": "^6.0.2",
+    "typescript": "^7.0.2",
     "ws": "^8.11.0"
   },
   "engines": {
